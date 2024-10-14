@@ -73,7 +73,7 @@ class School:
         print(subject)
 
         # All students
-        print("All Students")
+        print("************ All Students ************")
         result = ''
         for key,value in self.classrooms.items(): # we'll visit every classroom
             result += f"{key.upper()} Classroom Students\n"
@@ -82,7 +82,7 @@ class School:
             print(result)
         # All teachers
         # All student results
-        print("Student Results")
+        print("************ Student Results *************")
         for key,value in self.classrooms.items():
             for student in value.students:
                 for k,i in student.marks.items():
